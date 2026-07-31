@@ -38,17 +38,22 @@ https://automationexercise.com/api
 package base;
 
 import factroy.RequestSpecificationBuilder;
+import factroy.ResponseSpecificationBuilder;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
 
     protected RequestSpecification requestSpecification;
+    protected ResponseSpecification responseSpecififcation;
 
     @BeforeClass
     public void setup() {
 
         requestSpecification =
                 RequestSpecificationBuilder.buildRequestSpecification();
+        responseSpecififcation =
+                ResponseSpecificationBuilder.buildResponseSpecification();
     }
 }
