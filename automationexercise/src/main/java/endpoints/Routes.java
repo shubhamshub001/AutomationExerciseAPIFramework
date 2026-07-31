@@ -1,10 +1,14 @@
 package endpoints;
 
-public class Routes {
-    public static final String PRODUCTS = "/productsList";
-    public static final String BRANDS = "/brandsList";
+public final class Routes {
+
+    private Routes() {
+    }
+    public static final String PRODUCTS_LIST = "/productsList";
+    public static final String BRANDS_LIST = "/brandsList";
     public static final String SEARCH_PRODUCT = "/searchProduct";
     public static final String CREATE_ACCOUNT = "/createAccount";
-    public static final String DELETE_ACCOUNT = "/deleteAccount"; //This keeps API end points centralised.
+    public static final String DELETE_ACCOUNT = "/deleteAccount";
+    public static final String VERIFY_LOGIN = "/verifylogin"; //This keeps API end points centralised.
 
 }
